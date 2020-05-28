@@ -8,5 +8,10 @@ export default {
     console.log(res)
     // return res.data || [];
     return res.data || [];
+  },
+
+  runAdminPanel: async()=>{
+    let res = await axios.get(`http://localhost:5000/admin`);
+    return res;
   }
 }
